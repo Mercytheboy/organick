@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text_italic {
+  font-family: "Yellowtail";
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: var(--color-text-italic);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 1.2;
+  color: var(--color-header);
+}
+
+h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1.2;
+  color: var(--color-header);
+}
+
+h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: var(--color-header);
+}
+
+p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  color: var(--color-text);
+}
+
+@media screen and (max-width: 1024px) {
+  .text_italic {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 768px) {
+  .text_italic {
+    font-size: 1.2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .text_italic {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
   }
 }

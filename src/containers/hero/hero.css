@@ -1,0 +1,43 @@
+.organick__hero {
+  height: calc(100vh - 100px);
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-bg);
+  background-image: url(../../assest/Background\ Patterns.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.organick__hero-text {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.organick__hero-text a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 39px;
+  gap: 10px;
+
+  background: #efd372;
+  border-radius: 16px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #274c5b;
+}

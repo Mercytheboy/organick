@@ -1,0 +1,241 @@
+.organick__navbar {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  min-height: 100px;
+  padding: 0 4rem;
+}
+/* Company logo and name styling */
+.organick__navbar-company {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.organick__navbar-company_logo {
+  width: 36.58px;
+  height: 53.72px;
+}
+
+.organick__navbar-company_logo img {
+  display: block;
+  max-width: 100%;
+}
+
+.organick__navbar-company-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: var(--color-header);
+}
+/* Nav links */
+.organick__navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.organick__navbar-links ul {
+  list-style-type: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1.5rem;
+}
+
+/* Search bar and cart */
+.organick__navbar-search_cart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* search bar */
+.organick__navbar-search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 36px;
+  background-color: var(--color-bg);
+}
+
+.organick__navbar-search-bar input {
+  background: transparent;
+  max-width: 150px;
+  width: 100%;
+  border: 0;
+  outline: none;
+  font-size: 1rem;
+  color: var(--color-text);
+  padding: 0.5rem;
+}
+
+.organick__navbar-search-bar button {
+  border: 0;
+  outline: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-text-italic);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+/* cart */
+.organick__navbar-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+
+  border: 1px solid #e0e0e0;
+  padding: 0.5rem;
+  border-radius: 36px;
+
+  flex-shrink: 0;
+}
+
+.organick__navbar-cart div {
+  border: 0;
+  outline: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-header);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.organick__navbar-cart-count {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2rem;
+
+  color: var(--color-header);
+}
+
+.organick__navbar-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.organick__navbar-menu_container {
+  padding: 1rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.organick__navbar-menu_container-links ul {
+  list-style: none;
+}
+
+.organick__navbar-menu_container-links ul li {
+  height: 50px;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.organick__navbar-menu_search-bar {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .organick__navbar {
+    padding: 2rem;
+  }
+  .organick__navbar-links {
+    display: none;
+  }
+
+  .organick__navbar-search_cart-container {
+    margin-left: auto;
+  }
+
+  .organick__navbar-menu {
+    display: block;
+  }
+
+  .organick__navbar-logo p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .organick__navbar {
+    padding: 1rem 2rem;
+  }
+
+  .organick__navbar-search-bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .organick__navbar-cart-count {
+    display: none;
+  }
+
+  .organick__navbar-menu_search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 36px;
+    background-color: var(--color-bg);
+  }
+
+  .organick__navbar-menu_search-bar input {
+    background: transparent;
+    width: 250px;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+    color: var(--color-text);
+    padding: 0.5rem;
+  }
+
+  .organick__navbar-menu_search-bar button {
+    border: 0;
+    outline: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-text-italic);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 50%;
+
+    cursor: pointer;
+  }
+}

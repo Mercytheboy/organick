@@ -1,0 +1,10 @@
+.organick__navbar-navlink {
+  text-decoration: none;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: var(--color-header);
+}
