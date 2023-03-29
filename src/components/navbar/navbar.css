@@ -1,4 +1,8 @@
 .organick__navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+
   background: #fff;
   display: flex;
   justify-content: space-between;
@@ -21,7 +25,7 @@
 
 .organick__navbar-company_logo img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 .organick__navbar-company-name {
@@ -40,8 +44,6 @@
 }
 
 .organick__navbar-links ul {
-  list-style-type: none;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,6 +61,7 @@
 
 /* search bar */
 .organick__navbar-search-bar {
+  max-width: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,12 +72,10 @@
   background-color: var(--color-bg);
 }
 
-.organick__navbar-search-bar input {
-  background: transparent;
-  max-width: 150px;
+.organick__navbar-search-bar_input {
   width: 100%;
+  background: transparent;
   border: 0;
-  outline: none;
   font-size: 1rem;
   color: var(--color-text);
   padding: 0.5rem;
@@ -82,7 +83,6 @@
 
 .organick__navbar-search-bar button {
   border: 0;
-  outline: none;
 
   display: flex;
   justify-content: center;
@@ -112,7 +112,6 @@
 
 .organick__navbar-cart div {
   border: 0;
-  outline: none;
 
   display: flex;
   justify-content: center;
@@ -142,6 +141,10 @@
 }
 
 .organick__navbar-menu_container {
+  position: fixed;
+
+  background: #fff;
+  width: 100%;
   padding: 1rem 2rem;
 
   display: flex;
@@ -150,8 +153,8 @@
   align-items: start;
 }
 
-.organick__navbar-menu_container-links ul {
-  list-style: none;
+.organick__navbar-menu_container-links {
+  width: 100%;
 }
 
 .organick__navbar-menu_container-links ul li {
@@ -165,7 +168,6 @@
 .organick__navbar-menu_search-bar {
   display: none;
 }
-
 @media screen and (max-width: 1024px) {
   .organick__navbar {
     padding: 2rem;
@@ -207,6 +209,8 @@
     justify-content: space-between;
     align-items: center;
 
+    width: 100%;
+
     border: 0;
     padding: 0.5rem;
     border-radius: 36px;
@@ -215,9 +219,7 @@
 
   .organick__navbar-menu_search-bar input {
     background: transparent;
-    width: 250px;
     border: 0;
-    outline: none;
     font-size: 1rem;
     color: var(--color-text);
     padding: 0.5rem;
@@ -225,7 +227,6 @@
 
   .organick__navbar-menu_search-bar button {
     border: 0;
-    outline: none;
 
     display: flex;
     justify-content: center;

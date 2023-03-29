@@ -10,7 +10,7 @@ function Hero() {
       <div className="organick__hero-text">
         <p className="text_italic">100% Natural Food</p>
         <h1>Choose the best healthier way of life</h1>
-        <a href="#">Explore Now <FaArrowCircleRight /></a>
+        <a href="#" className='btn'>Explore Now <FaArrowCircleRight /></a>
       </div>
     </div>
   )

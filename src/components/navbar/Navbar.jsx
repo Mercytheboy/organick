@@ -22,10 +22,10 @@ function Navbar() {
         </nav>
 
         <div className='organick__navbar-search_cart-container'>
-          <form action="" className="organick__navbar-search-bar">
-            <input type="text" placeholder="Search..." />
+          <div action="" className="organick__navbar-search-bar">
+            <input type="text" placeholder="Search..." className="organick__navbar-search-bar_input"/>
             <button type="submit"><FaSearch /></button>
-          </form>
+          </div>
 
           <div className="organick__navbar-cart">
             <div>
