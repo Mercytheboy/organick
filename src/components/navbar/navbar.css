@@ -168,6 +168,7 @@
 .organick__navbar-menu_search-bar {
   display: none;
 }
+
 @media screen and (max-width: 1024px) {
   .organick__navbar {
     padding: 2rem;
@@ -195,12 +196,6 @@
   }
 
   .organick__navbar-search-bar {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .organick__navbar-cart-count {
     display: none;
   }
 
@@ -238,5 +233,15 @@
     border-radius: 50%;
 
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .organick__navbar-company-name {
+    font-size: 1.5rem;
+  }
+
+  .organick__navbar-cart-count {
+    display: none;
   }
 }

@@ -32,7 +32,7 @@ h2 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.2;
   color: var(--color-header);
 }
@@ -41,7 +41,7 @@ h3 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.2;
   color: var(--color-header);
 }
@@ -55,15 +55,21 @@ p {
   color: var(--color-text);
 }
 
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 28px 39px;
+  padding: 1em;
   gap: 10px;
 
   background: var(--color-header);
-  border-radius: 16px;
+  border-radius: 8px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -102,11 +108,15 @@ p {
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   h3 {
     font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
   }
 }
 
@@ -120,7 +130,7 @@ p {
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   h3 {
@@ -128,6 +138,6 @@ p {
   }
 
   p {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 }

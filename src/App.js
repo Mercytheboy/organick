@@ -1,7 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route, Switch} from 'react-router-dom'
 import { Navbar } from './components'
-import {Hero, Advert, About} from './containers'
+import {Hero, Advert, About, Footer} from './containers'
 
 import './app.css'
 
@@ -15,7 +15,8 @@ function App() {
         <Route path='/' element={<Hero/>} />
       </Routes>
       <Advert />
-      <About/>
+      <About />
+      <Footer />
     </>
   )
 }
