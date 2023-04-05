@@ -1,20 +1,21 @@
-import React from 'react'
-import './advert.css'
+import React from "react";
+import "./advert.css";
+import Card from "../../components/cards/Card";
+import banana from "../../assest/Image.png";
+import fruit from "../../assest/Image2.png";
 
 function Advert() {
   return (
     <div className="organick__advert">
-      <div className="organick__advert-card">
-        <p className="text_italic">Natural!!</p>
-        <h3>Get Garden Fresh Fruits</h3>
-      </div>
-
-      <div className="organick__advert-card">
-        <p className="text_italic">Offer!!</p>
-        <h3>Get 10% off on Vegetables</h3>
-      </div>
+      <Card
+        img={banana}
+        title="Natural!!"
+        desc="Get Garden Fresh Fruits"
+        style = {{color:'#fff'}}
+      />
+      <Card img={fruit} title="Offer!!!" desc="Get 10% off on Vegetables" />
     </div>
-  )
+  ); 
 }
 
-export default Advert
+export default Advert;

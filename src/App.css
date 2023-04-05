@@ -32,7 +32,7 @@ h2 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.2;
   color: var(--color-header);
 }
@@ -41,7 +41,7 @@ h3 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.2;
   color: var(--color-header);
 }
@@ -55,15 +55,21 @@ p {
   color: var(--color-text);
 }
 
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 28px 39px;
+  padding: 1em;
   gap: 10px;
 
   background: var(--color-header);
-  border-radius: 16px;
+  border-radius: 8px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -76,7 +82,7 @@ p {
 
 @media screen and (max-width: 1024px) {
   .text_italic {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   h1 {
@@ -94,11 +100,11 @@ p {
 
 @media screen and (max-width: 768px) {
   .text_italic {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   h2 {
@@ -106,17 +112,21 @@ p {
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 425px) {
   .text_italic {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   h2 {
@@ -128,6 +138,6 @@ p {
   }
 
   p {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 }

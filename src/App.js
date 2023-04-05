@@ -1,21 +1,23 @@
 import React from 'react'
-import {BrowserRouter as Router, Routes, Route, Switch} from 'react-router-dom'
-import { Navbar } from './components'
-import {Hero, Advert, About} from './containers'
-
+import { Routes, Route} from 'react-router-dom'
 import './app.css'
+import Layout from './containers/layout'
+import Home from './pages/home'
+import About from './pages/about'
+import Pages from './pages/pages'
 
 function App() {
 
   return (
     <>
-      <Navbar />
-
       <Routes>
-        <Route path='/' element={<Hero/>} />
+        <Route path='/' element={<Layout />} >
+          <Route index element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/pages' element={<Pages />} />
+        </Route>
       </Routes>
-      <Advert />
-      <About/>
+ 
     </>
   )
 }

@@ -2,6 +2,7 @@
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 1000;
 
   background: #fff;
   display: flex;
@@ -18,9 +19,9 @@
   align-items: center;
   gap: 0.5rem;
 }
+
 .organick__navbar-company_logo {
-  width: 36.58px;
-  height: 53.72px;
+  width: 36px;
 }
 
 .organick__navbar-company_logo img {
@@ -137,7 +138,32 @@
 
 .organick__navbar-menu {
   display: none;
-  cursor: pointer;
+}
+
+.organick__navbar-menu_container {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .organick__navbar {
+    padding: 2rem;
+  }
+  .organick__navbar-links {
+    display: none;
+  }
+
+  .organick__navbar-search_cart-container {
+    margin-left: auto;
+  }
+
+  .organick__navbar-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .organick__navbar-logo p {
+    font-size: 1.5rem;
+  }
 }
 
 .organick__navbar-menu_container {
@@ -168,39 +194,12 @@
 .organick__navbar-menu_search-bar {
   display: none;
 }
-@media screen and (max-width: 1024px) {
-  .organick__navbar {
-    padding: 2rem;
-  }
-  .organick__navbar-links {
-    display: none;
-  }
-
-  .organick__navbar-search_cart-container {
-    margin-left: auto;
-  }
-
-  .organick__navbar-menu {
-    display: block;
-  }
-
-  .organick__navbar-logo p {
-    font-size: 1.5rem;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .organick__navbar {
     padding: 1rem 2rem;
   }
 
   .organick__navbar-search-bar {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .organick__navbar-cart-count {
     display: none;
   }
 
@@ -238,5 +237,18 @@
     border-radius: 50%;
 
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .organick__navbar-company_logo {
+    width: 30px;
+  }
+  .organick__navbar-company-name {
+    font-size: 1.5rem;
+  }
+
+  .organick__navbar-cart-count {
+    display: none;
   }
 }
