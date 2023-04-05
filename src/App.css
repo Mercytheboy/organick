@@ -82,7 +82,7 @@ img {
 
 @media screen and (max-width: 1024px) {
   .text_italic {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   h1 {
@@ -100,19 +100,19 @@ img {
 
 @media screen and (max-width: 768px) {
   .text_italic {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   p {
@@ -122,15 +122,15 @@ img {
 
 @media screen and (max-width: 425px) {
   .text_italic {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   h3 {

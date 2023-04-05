@@ -1,0 +1,13 @@
+.organick__card {
+  position: relative;
+  max-width: 500px;
+}
+
+.organick__card-content {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+
+  width: 155px;
+}
